@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body{
+    background-image: url('./img/pexels-ovan-62693.jpg');
+    object-fit: cover;
+
+    } */
+
+
+.nav-item:hover{
+    border-bottom: 2px solid #deb887;
+}
+
+
+ /* Dropdown Button */
+ .dropbtn {
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size:14px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    opacity:0.5;
+    height: 100%;
+    transform: translateY(0,50%);
+    margin-bottom: 3px;
+
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+     border-bottom: 2px solid #deb887;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;}  */
+
+
+  .grid-item{
+    width: 300px;
+    height: 200px;
+  }
+
+
+  .form-container{
+    margin:0; 
+    background-color: #deb887;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container form{
+    display: flex;
+    flex-direction: column;
+    background-color:antiquewhite;
+    width:300px;
+    padding:20px
+  }
+
+  input{
+    width: 50%;
+    margin-bottom: 8px;
+    background-color:rgb(225, 244, 244);
+    border:none;
+    height: 5vh;
+    padding:4px;
+    font-size:14px
+    
+  }
+
+  /* button{
+    width:20%;
+    border-radius: 30px;
+    height: 5vh;
+    color: #f1f1f1;
+    background-color: rgba(151, 9, 9, 0.434);
+    cursor: pointer;
+    border: none;
+    font-size:16px
+  } */
+
+   /* The Modal (background) */
+.modal {
+  display:none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.bag{
+  font-size: 50px;
+  line-height: 50px;
+  
+}
+
+swiper-slide{
+  object-fit: cover;
+}
+
+swiper-slide img{
+  width: 400px;
+  height: 250px;
+  
+}
+
+.button-enrol button{
+  background-color: rgb(184, 0, 0);
+  color: #fff;
+  
+  
+}
+.button-enrol button:hover{
+  cursor: pointer;
+  background-color: rgb(138, 43, 43);
+  color: #fff;
+
+}
+
+.head-line{
+  font-size:80px;
+  font-weight: 900;
+  text-align: left;
+  font-family:inter,sans-serif;
+  font-style: normal;
+  letter-spacing: 0px;
+  padding: 0px;
+  line-height: 80px;
+  color:#fff
+}
+
+.head-tag{
+  font-size: 19.2px;
+  color:#fff;
+  font-weight: 500px;
+  line-height: 23.4px;
+}
