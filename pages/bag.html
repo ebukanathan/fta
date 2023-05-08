@@ -5,63 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
     <link href="/dist/output.css" rel="stylesheet">
     <link href="../input.css" rel="stylesheet">
    
     <title>BAGMAKING</title>
 </head>
 <body>
-    <div class="nav-bar  h-18 ">
-        <div class="flex flex-row justify-between  items-center mx-7  p-3 ">
-            <!-- logo -->
-            <div class="flex flex-row items-center">
-                <a href="./index.html"><img src="../img/logo.png" width="150" height="100" alt=""></a>
-                <div class="text-xl color-black"></div>
-                                  
-            </div >
-            <!-- menu -->
-            <div class=" flex flex-row justify-between">
-                <div class="nav-item text-xl font-bold mx-3" ><a href="../index.html">Home</a></div>
-                <div class="nav-item text-xl font-bold mx-3" ><a href="./aboutus.html">About Us</a></div>
-                <div class="nav-item text-xl font-bold mx-3 dropdown">
-                  <button class="dropbtn">The Academy</button>
-                  <div class="dropdown-content">
-                    <a href="./shoemaking.html">Shoe Making</a>
-                    <a href="./bag.html">Bag Making</a>
-                    <a href="./group.html">Group Training</a>
-                  </div>
-                </div> 
-                <div class="nav-item text-xl font-bold mx-5"><a href="">Gallery</a></div>
-            </div>
+    <div class="mx-auto overflow-hidden">
+      <!-- ====HEADER=== -->
+    <my-header></my-header>
 
-        </div>
-    </div>
-    
-
-    <div   style="background-image:url('../img/onsiteshoemaking.jpg')" class= "bg-center bg-cover  w-full h-96">
+    <div   style="background-image:url('/img/bag-3.jpeg')" class= "bg-bottom bg-cover  w-full h-96">
         <div class="flex flex-col justify-center p-10 backdrop-brightness-50 h-full ">
             <div class="font-bold mt-12 ">
                 <h1 class="head-line">BAG MAKING</h1>
             </div>
             <p class="head-tag w-2/3">
-              Welcome to our Bagmaking courses! We're passionate about sharing our expertise with you and helping you develop the skills needed to create your own beautiful Bags.
-            </p>
+              Welcome to our Bagmaking courses! We're passionate about sharing our expertise with you
+             </p>
         </div>
     </div>
 
     <!-- introduction to bagmaking -->
     
     <div class="flex flex-col my-10 w-3/4 mx-auto justify-center items-center gap-y-5">
-        <h2 class="bag text-4xl leading-10 text-center"></p>
+        <h2 class="bag text-4xl leading-10 text-center"></h2>
         <p class="text-base p-2 text-center">The bag making course is unquestionably the best option for you if you want to develop into an all-encompassing and informed expert who can handle any function involving the product in the 
-            bag business and who has a technical and design culture that is unsurpassed globally.</p>
+            bag business and who has a technical and design culture that is unsurpassed globally.
+        </p>
          <!-- <a href=""><button class="mt-8 rounded-sm border-2 p-6">DISCOVER THE PROGRAM</button></a> -->
     </div>
 
    <!-- TARGET STUDENT -->
    <div class="w-1/2 mx-auto h-18">
     <h3 class="text-4xl mb-5">Target <span class="text-bold">students</span></h3>
-    <div class="flex flex-row space-x-5">
+    <div class="flex flex-col gap-y-4 md:flex-row space-x-5">
         <div class="z-0">
             <img src="../img/bag6-removebg-preview.png" width="500" height="400">
         </div>
@@ -81,15 +61,16 @@
 
 
    <!-- ONLINE CLASS -->
-   <div class="flex flex-row  justify-between w-3/4 mx-auto mt-20 ">
+   <div class="flex flex-col  justify-between w-3/4 mx-auto  mt-20  gap-y-4 md:flex-row ">
     <!-- text -->
-    <div class="flex flex-col  justify-center items-center w-1/2">
+    <div class="flex flex-col  justify-center items-center md:w-1/2">
        <h2 class="text-3xl mb-5 text-center">Attend this course <span>online</span></h2> 
        <p class="p-3 text-base indent-8">accessible online via live webinars, previously recorded courses, and weekly reviews with a personal teacher.
         You will adhere to the same class schedule as the in-person course participants,
          and you are required to take part in live activities and progress evaluations. </p> 
          <div class="button-enrol">
-         <a href=""><button class="h-16  mt-8 rounded-lg p-4">Register</button></a>
+        
+          <a href=""><button class="h-16  mt-8 rounded-lg p-4">Register</button></a>
 
          </div>   
 
@@ -97,14 +78,14 @@
 
     </div>
     <!-- image -->
-    <div class="">
-        <img src="../img/laptop.jpeg" alt="" width="450" height="300" >
+    <div class="text-center">
+        <img src="/img/laptop.jpeg" alt="" width="450" height="300" >
     </div>
    </div>
 
    <!-- choose section -->
 
-   <div class="w-1/2 mx-auto mt-10">
+   <div class="w-2/3 mx-auto mt-10 md">
     <p class="text-base">
       No matter which course you choose, you'll receive personalized attention and 
       support from our instructors every step of the way. We believe that everyone has the potential to
@@ -115,7 +96,7 @@
 
 
    <!-- COURESE PATH -->
-   <div class="flex flex-col gap-y-4 mx-auto mt-10 md:w-2/3">
+   <div class="flex flex-col gap-y-4 mx-auto mt-10 w-3/4 md:w-2/3">
     <h3 class="text-3xl font-bold">
       COURSE PATH
     </h3>
@@ -243,6 +224,7 @@
         </div>
       </footer>
        
+    </div>
 
 
 
@@ -254,7 +236,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script src="/node_modules/tw-elements//dist/js/index.min.js"></script>
-<script src="./main.js"></script>
+<script src="../main.js"></script>
     
 </body>
 </html>

@@ -2,7 +2,8 @@
 module.exports = {
   content: ["./src/**/*.{html,js}",
   "./dist/*.{html,js}",
-  './node_modules/tw-elements/dist/js/**/*.js'
+  './node_modules/tw-elements/dist/js/**/*.js',
+  "**/*.{html,js}"
 ],
   theme: {
     screens:{
@@ -14,15 +15,14 @@ module.exports = {
 
     extend: {
       colors:{
-        brightRed:'hsl(12,88%,59%)',
-        brightRedLight:'hsl(12,88%,69%)',
-        brightRedSupLight:'hsl(12,88%,95%)',
-        darkBlue:'hsl(228,39%,23%)',
-        veryDarkBlue:'hsl(233,12%,13%)',
-        darkGrayishBlue:'hsl(227,12%,61%)',
-        veryPaleRed:'hsl(13,100%,96%)',
-        veryLightGray:'hsl(0,0%,98%)'
-    },
+        darkBlue:'hsl(221,72%,18%)',
+        lightGrey:'hsl(237,12%,70%)',
+        darkGrey:'hsl(237,7%,49%)',
+        darkRed:'hsl(349,79%,17%)',
+        brown:'hsl(355,38%,37%)',
+        whitesmoke:'hsl(0,0%,96%)'
+            
+      },
   },
   plugins: [
     require('tw-elements/dist/plugin')

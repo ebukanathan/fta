@@ -9,6 +9,9 @@
 
     } */
 
+    html {
+      scroll-behavior: smooth;
+    }
 
 .nav-item:hover{
     border-bottom: 2px solid #deb887;
@@ -152,6 +155,23 @@
   
 }
 
+/* -----button----- */
+
+.button{
+  display: inline-block;
+  background-color:#a10404;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  color:white;
+  font-weight:500;
+  transition: box-shadow .4s;
+}
+
+.button:hover{
+  box-shadow: 3px 19px 18px 4px rgba(161,89,89,0.41);
+-webkit-box-shadow: 3px 19px 18px 4px rgba(161,89,89,0.41);
+}
+
 swiper-slide{
   object-fit: cover;
 }
@@ -176,7 +196,7 @@ swiper-slide img{
 }
 
 .head-line{
-  font-size:80px;
+  font-size:3.75rem;
   font-weight: 900;
   text-align: left;
   font-family:inter,sans-serif;
@@ -193,3 +213,252 @@ swiper-slide img{
   font-weight: 500px;
   line-height: 23.4px;
 }
+
+
+/* Add blur to header */
+
+.blur__header{
+  background-color: transparent;
+  
+}
+
+.blur__header::after{
+  content:'';
+  position:absolute;
+  width:1000%;
+  height:100%;
+  background-color: hsla(0,0%,10%,.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.nav__container{
+  background-image: linear-gradient(to right top, #a9aabc, #8385a0, #5e6185, #39406b, #0d2251);
+}
+
+
+.nav__container,.nav-bar{
+  position:relative
+}
+
+.nav__toggle{
+  position:absolute;
+  right:1rem;
+  top:2rem;
+  font-size: 1.25rem;
+}
+
+
+
+.nav__close,
+.nav__toggle{
+  display:flex;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width:768px){
+  .nav__menu {
+    position:fixed;
+    top:0;
+    right:-100%;
+    background-color:hsla(0,0%,10%,.3);
+    width:50%;
+    height:50%;
+    padding: 2rem 0 0 3rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    transition: right .4s;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.5rem;
+      
+    
+   }
+
+  
+}
+
+
+
+.nav__close{
+  position: absolute;
+  top:1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+
+/* ----show menu---- */
+.show-menu{
+  right: 0; 
+}
+
+@media screen and (min-width:768px){
+  .nav__menu{
+    display: flex;
+    column-gap: 1.5rem;
+  }
+
+  .nav__close,
+  .nav__toggle{
+    display: none;
+  }
+}
+
+/* .nav__container{
+  position:fixed;
+  top:0;
+  background-color:hsla(0,0%,10%,.3);
+  width: 100%;
+  height: 15vh;
+  z-index: 50;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+} */
+
+
+/* ---hero section--- */
+
+.hero{
+  background-position:center center;
+  background-size:cover;
+  width: 100%;
+  height: 24rem;
+
+
+}
+
+.hero__content{
+  position: relative;
+  animation: move 2s;
+
+}
+
+@keyframes move{
+  from{top:-3rem}
+  to{top:0rem}
+}
+
+
+/* ---card--- */
+
+.card{
+  
+ transition: transform .4s;
+ 
+}
+
+.card:hover{
+  transform: translateY(-1.5rem);
+  
+}
+
+.card__container{
+  background-image: linear-gradient(to right top, #0f2650, #39446a, #5e6484, #8286a0, #a8aabc);
+}
+  
+
+.secondhero__container{
+  background-color: whitesmoke;
+  padding: 2rem 2rem;
+  
+}
+
+/* testimonial */
+
+.testimonial__head{
+  transition: transform .8s;
+}
+
+.testimonial__head:hover{
+  transform: translateY(-1.5rem);
+}
+
+/*=============== SCROLL UP ===============*/
+
+.scrollup{
+  position:fixed;
+  right:1rem;
+  bottom:-50%;
+  background-color: var(--body-color);
+  padding: 6px;
+  display:inline-flex;
+  color:var(--first-color);
+  z-index: 10;
+  transition: bottom .4s, transform .4s;
+  
+}
+
+.scrollup:hover{
+  transform: translateY(.25rem);
+}
+
+/* Show Scroll Up */
+
+.show__scrollup{
+  bottom:3rem
+}
+
+
+/* ======ABOUT PAGE======== */
+
+
+
+.about__hero{
+    
+    background-image: url(img/group-3.jpeg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:50vh;
+    width: 100vw;
+    
+
+}
+
+.about__hero-content{
+  padding-left: 3rem;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.2);
+  color:#ffffff;
+  backdrop-filter: brightness(.5);
+
+
+
+}
+@media screen and (max-width:768px){
+  .about__hero{
+    background-image: url(/img/group-3i.jpeg);
+  }
+}
+
+
+/* ====SHOE==== */
+.shoe__hero{
+  background-image: url(img/show-4.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height:50vh;
+  width: 100vw;
+
+}
+.shoe__hero-content{
+  padding-left: 3rem;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.2);
+  color:#ffffff;
+  backdrop-filter: brightness(.5);
+}
+
+
+
+
+

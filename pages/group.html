@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <link href="../input.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -14,32 +16,8 @@
 </head>
 <body>
     <div class="overflow-hidden"> 
-        <!-- navbar -->
-        <div class="nav-bar  h-18 ">
-            <div class="flex flex-row justify-between  items-center mx-7  p-3 ">
-                <!-- logo -->
-                <div class="flex flex-row items-center">
-                    <a href="../index.html"><img src="../img/logo.png" width="150" height="100" alt=""></a>
-                    <div class="text-xl color-black"></div>
-                                      
-                </div >
-                <!-- menu -->
-                <div class="flex flex-row justify-between">
-                  <div class="nav-item text-xl font-bold mx-3" ><a href="../index.html">Home</a></div>
-                    <div class="text-xl font-bold mx-3" ><a href="./aboutus.html">About Us</a></div>
-                    <div class="nav-item text-xl font-bold mx-3 dropdown">
-                      <button class="dropbtn">The Academy</button>
-                      <div class="dropdown-content">
-                        <a href="./shoemaking.html">Shoe Making</a>
-                        <a href="./bag.html">Bag Making</a>
-                        <a href="./group.html">Group Training</a>
-                      </div>
-                    </div> 
-                    <div class="text-xl font-bold mx-5"><a href="">Gallery</a></div>
-                </div>
-
-            </div>
-        </div>
+        <!-- ====header===== -->
+        <my-header></my-header>
 
 
 
@@ -218,6 +196,6 @@
 <script src="/node_modules/tw-elements//dist/js/index.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-<script src="../main.js"></script>
+<script src="/main.js"></script>
 </body>
 </html>
