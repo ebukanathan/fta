@@ -688,6 +688,11 @@ video {
   margin-right: auto;
 }
 
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .mx-14 {
   margin-left: 3.5rem;
   margin-right: 3.5rem;
@@ -698,16 +703,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.mx-7 {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -716,6 +711,11 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mx-3 {
@@ -768,28 +768,24 @@ video {
   margin-top: 2rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .box-border {
@@ -1493,6 +1489,12 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1919,6 +1921,11 @@ video {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
+.bg-whitesmoke {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 96% / var(--tw-bg-opacity));
+}
+
 .bg-darkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(221 72% 18% / var(--tw-bg-opacity));
@@ -1937,11 +1944,6 @@ video {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-darkGrey {
-  --tw-bg-opacity: 1;
-  background-color: hsl(237 7% 49% / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\.\'\)\] {
@@ -2011,10 +2013,6 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-bottom {
@@ -2090,12 +2088,16 @@ video {
      object-fit: scale-down;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-4 {
@@ -2104,10 +2106,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .p-6 {
@@ -2171,10 +2169,6 @@ video {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.pt-48 {
-  padding-top: 12rem;
 }
 
 .pl-2 {
@@ -2281,14 +2275,19 @@ video {
   font-family: "some font",sans-serif;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-2xl {
@@ -2301,9 +2300,9 @@ video {
   line-height: 1.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -2428,6 +2427,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -2836,11 +2840,9 @@ video {
   content: "hello";
 }
 
-/* body{
-    background-image: url('./img/pexels-ovan-62693.jpg');
-    object-fit: cover;
-
-    } */
+body{
+  font-family: 'Poppins', sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
@@ -3016,8 +3018,8 @@ input{
 }
 
 .button:hover{
-  box-shadow: -3px 15px 18px 3px rgba(0,0,0,0.63);
-  -webkit-box-shadow: -3px 15px 18px 3px rgba(0,0,0,0.63);
+  box-shadow: 3px 19px 18px 4px rgba(161,89,89,0.41);
+  -webkit-box-shadow: 3px 19px 18px 4px rgba(161,89,89,0.41);
 }
 
 swiper-slide{
@@ -3042,13 +3044,12 @@ swiper-slide img{
 }
 
 .head-line{
-  font-size:3.75rem;
-  font-weight: 900;
+  font-size:2.75rem;
+  font-weight: 600;
   text-align: left;
   font-family:inter,sans-serif;
   font-style: normal;
   letter-spacing: 0px;
-  padding: 0px;
   line-height: 80px;
   color:#fff
 }
@@ -3161,10 +3162,17 @@ swiper-slide img{
 /* ---hero section--- */
 
 .hero{
-  background-position:center center;
-  background-size:cover;
-  width: 100%;
+  position: relative;
   height: 24rem;
+}
+
+.hero__img{
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .hero__content{

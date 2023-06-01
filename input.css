@@ -129,7 +129,7 @@
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 10% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 40%; /* Could be more or less, depending on screen size */
@@ -155,6 +155,14 @@
   font-size: 50px;
   line-height: 50px;
   
+}
+
+@media screen and (max-width:768px){
+   .modal-content{
+    width: 90%;
+    margin:15% auto;
+   }
+
 }
 
 /* -----button----- */
@@ -467,6 +475,16 @@ swiper-slide img{
 }
 
 
-
+.whatsapp{
+  display: flex;
+  align-items: center;
+  background-color: green;
+  color:white;
+  padding:0.5rem;
+  border:none;
+  border-radius: 10px;
+  
+  margin: 3rem  auto;
+}
 
 
