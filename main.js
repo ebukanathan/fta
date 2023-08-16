@@ -114,3 +114,12 @@ const scrollup =()=>{
 } ;
 
 window.addEventListener('scroll',scrollup)
+
+
+const showWhatsapp =()=>{
+  const whatsapp = document.getElementById('whatsapp')
+
+  this.scrollY >=1800 ? whatsapp.classList.add('whatsapp'):whatsapp.classList.remove('whatsapp')
+}
+
+window.addEventListener('scroll',showWhatsapp)

@@ -478,10 +478,12 @@ swiper-slide img{
 .whatsapp{
  position:fixed;
  right:0;
- bottom:20vh;
- z-index:100
+ bottom:15vh;
+ z-index:100;
+ margin-right: 0.5rem;
  
 
 }
+
 
 
