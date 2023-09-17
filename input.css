@@ -427,7 +427,7 @@ swiper-slide img{
 
 .about__hero{
     
-    background-image: url(img/group-3.jpeg);
+    background-image: url(img/group-3.webp);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -457,7 +457,7 @@ swiper-slide img{
 
 /* ====SHOE==== */
 .shoe__hero{
-  background-image: url(img/show-4.jpeg);
+  background-image: url(img/show-4.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
