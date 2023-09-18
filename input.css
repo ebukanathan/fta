@@ -41,6 +41,8 @@
     z-index: 1;
     font-size:14px;
   }
+
+  
   
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -50,6 +52,7 @@
     display: block;
     opacity:0.5;
     height: 100%;
+    width: 100%;
     transform: translateY(0,50%);
     margin-bottom: 3px;
 
