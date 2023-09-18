@@ -64,8 +64,10 @@
     }
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
+    @media screen and (min-width:768px){
+    .dropdown:hover .dropdown-content {display: block;}
+
+  }
   /* Change the background color of the dropdown button when the dropdown content is shown */
   /* .dropdown:hover .dropbtn {background-color: #3e8e41;}  */
 
@@ -460,8 +462,8 @@ swiper-slide img{
 
 /* ====SHOE==== */
 .shoe__hero{
-  background-image: url(img/show-4.webp);
-  background-size: cover;
+  background-image: url(img/shoe-making-two.webp);
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height:50vh;
