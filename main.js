@@ -46,6 +46,14 @@ if(navClose){
         navMenu.classList.remove('show-menu')
         
     })
+    
+}
+
+if(!navMenu){
+  navMenu.addEventListener('click',()=>{
+    navMenu.classList.remove('show-menu')
+  })
+
 }
 
 // /*=============== REMOVE MENU MOBILE ===============*/
@@ -59,6 +67,8 @@ if(navClose){
  navLink.forEach(n=>n.addEventListener('click',linkAction))
 
 // ======= REMOVE MOBILE MENU WHEN OUTSIDE IS CLICKED===
+
+
 
 
 

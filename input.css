@@ -39,26 +39,31 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    font-size:14px;
+    
+
   }
+
+  /* .dropdown-show{
+    display:block
+  } */
 
   
   
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px;
     text-decoration: none;
-    display: block;
     opacity:0.5;
     height: 100%;
     width: 100%;
     transform: translateY(0,50%);
     margin-bottom: 3px;
+    font-family:sans-serif;
 
   }
-  
-  /* Change color of dropdown links on hover */
+ 
+    /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
      border-bottom: 2px solid #deb887;
     }
@@ -66,8 +71,24 @@
   /* Show the dropdown menu on hover */
     @media screen and (min-width:768px){
     .dropdown:hover .dropdown-content {display: block;}
-
+    
   }
+  @media screen and (min-width:768px){
+    .course{display: block;}
+    .mobile-courses{display: none;}
+    
+  }
+
+  @media screen and (max-width:768px){
+   .courses{ display:none}
+   .mobile-courses{display:block}
+    
+  }
+
+
+
+ 
+  
   /* Change the background color of the dropdown button when the dropdown content is shown */
   /* .dropdown:hover .dropbtn {background-color: #3e8e41;}  */
 
