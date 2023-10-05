@@ -26,7 +26,7 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
 <!-- =====Page Title===== -->
-<title>The FootWears Academy</title> 
+<title>The Footwear Academy</title> 
 </head>
 <body>
     <div class="mx-auto overflow-hidden">
@@ -54,7 +54,7 @@
                 <div class="nav-item text-xl font-bold  mobile-courses" ><a href="pages/shoemaking.html">Shoe Making</a></div>
                 <div class="nav-item text-xl font-bold mobile-courses" ><a href="pages/bag.html">Bag Making</a></div>
                 <div class="nav-item text-xl font-bold mobile-courses" ><a href="pages/group.html">Group Training</a></div> 
-                <div class="nav-item text-xl font-bold "><a href="">Blog</a></div>
+                <div class="nav-item text-xl font-bold "><a href="/pages/blog.html">Blog</a></div>
                 
                 
 
@@ -78,22 +78,24 @@
 
     <!-- hero section -->
 
-    <section class= "hero">
-      <img  src="img/fta-landing2.webp" alt="hero-image" width="full" height="full" class="hero__img">
+     <section class= "hero">
+      <img  src="img/newlanding.jpg" alt="hero-image" width="full" height="full" class="hero__img">
         <div class=" flex flex-col justify-end pl-2 text-white backdrop-brightness-75 h-full ">
             <div class="hero__content font-bold">
                 <h1 class="font-mono leading-10 text-4xl mb-5 md:text-6xl">The Footwear Academy</h1>
             </div>
            
         </div>
-      </section>
+      </section> 
+
+      
 
     <!-- second hero with slider -->
     
 
     <div class="secondhero__container" >
         
-          <div class= "flex flex-col justify-center items-center space-x-5 md:flex-row w-3/4 mx-auto">
+          <div class= "flex flex-col-reverse justify-center items-center space-x-5 md:flex-row w-3/4 mx-auto">
             <!-- slider goes here -->
             <div class="swiper w-full md:w-1/3">
               <!-- Additional required wrapper -->
@@ -108,10 +110,10 @@
             </div>        
         
         <!-- caption -->
-        <div class="caption caption flex flex-col justify-center md:w-2/3">
-            <div class="caption-text text-xl text-center font-thin md:px-14">
+        <div class="caption caption flex flex-col justify-center w-full mb-6 md:w-2/3">
+            <div class="caption-text  p-0text-justify w-full  md:px-14 ">
                
-              <h3>Welcome to <span class="font-bold">The Footwear Academy</span>, your gateway to the world of style and craftsmanship. 
+              <h3 class="fade-in  text-justify text-lg md:text-lg">Welcome to <span class="">The Footwear Academy</span>, your gateway to the world of style and craftsmanship. 
                 As experts in both shoe and bag manufacturing, we seamlessly blend
                  artistry with precision to create products that are as functional as they are fashionable. </h3>
             
@@ -124,72 +126,60 @@
     <!-- Training -->
     <!-- captions -->
     <div class="flex flex-col justify-center items-center mt-10">
-        <div class="text-3xl font-black font-inter text-black">
-            <h2>COURSES OFFERED</h2>
+        <div class="font-inter ">
+            <h2 class="text-xl font-medium" >COURSES OFFERED</h2>
         </div>
-        <div class="text-2xl font-thin">
-            <h5>at The Footwear Academy</h5>
+        <div class="">
+            <h5 class="text-base">at The Footwear Academy</h5>
         </div>
         
     </div>
     
     <!-- description -->
-    <div class="text-medium m-10 px-4 text-center md:w-2/3 mx-auto">
-      <p>
-        Our academy is a dedicated hub for all things shoes and bags, offering a diverse range of courses and resources for both aspiring and seasoned enthusiasts. Whether you're passionate about shoes and bags design, manufacturing, or fashion,
-         our academy is your stepping stone to excellence
+    <div class="m-10 px-4 text-sm text-justify md:w-2/3 mx-auto text-base ">
+      <p class="fade-in text-center">
+        Our academy is a dedicated hub for all things shoes and bags, offering a diverse range of courses and resources for both aspiring and seasoned enthusiasts.
       </p>
-      <!-- <p>
-            We offer formalized footwear training
-            programs that can be assessed online &
-            offline.
-            We are building the largest community of
-            shoemakers in Africa and connecting trained
-            shoemakers to job matching, collaboration
-            and investment opportunities.
-      </p> -->
+       
     </div>
 
     
 
     <!-- COURSES -->
-    <div class="card__container mb-10">
-    <div class="grid grid-cols-1  w-3/4 mx-auto gap-y-5  p-4 md:grid-cols-3 gap-x-4">
+    <div class="mb-10 hidden  md:block ">
+    <div class="grid grid-cols-1  w-3/4 mx-auto  p-4  md:grid-cols-3 sm:hidden">
       <!-- cards -->
-      <a  href="/pages/bag.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg">
-        <img  class="rounded-t-lg" src="./img/bag-28.jpg" alt="bag-making-course" width="full" height="80">
-        <div class="p-3">
-            <h5 class="font-bold text-xl mb-2">Bagmaking</h5>
-            <p class="text-base">Explore the world of bag making with our expert guidance.
-              Learn to create stunning, personalized bags that reflect your style.</p>
+      <a  href="/pages/bag.html" class="card flex flex-col bg-gray w-3/4 shadow-lg rounded-lg">
+        <img  class="rounded-t-lg mx-auto mt-4" src="./img/bag-28.jpg" alt="bag-making-course" width="200" height="200">
+        <div class="p-6">
+            <h5 class="mb-2 text-sm font-semibold">Bag making</h5>
+            <p class=" text-xs md:text-sm">Explore the world of bag making
+              </p>
             
         </div>
 
       </a>
     <!-- cards -->
-    <a href="./pages/shoemaking.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg">
-      <img  class="rounded-t-lg" src="./img/shoe-12.jpeg" alt="shoe-making-course" width="full" height="80">
+    <a href="./pages/shoemaking.html" class="card flex flex-col bg-whitesmoke w-3/4 shadow-lg rounded-lg">
+      <img  class="rounded-t-lg mx-auto mt-4" src="./img/shoe-12.jpeg" alt="shoe-making-course" width="200" height="200">
       
         <div class="p-3">
-          <h5 class="font-bold text-xl mb-2">Shoemaking</h5>
-          <p>Master the art of shoemaking from design to finish,
-            Create custom-made shoes with our hands-on course</p>
+          <h5 class="mb-2  text-sm font-semibold">Shoe making</h5>
+          <p class="text-xs md:text-sm">Master the art of shoemaking from design to finish</p>
           
       </div>
 
-    
-    </a>
+      </a>
     
     <!-- Card -->
 
     
-      <a href="./pages/group.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg ">
-        <img  class="rounded-t-lg" src="./img/group3.jpg" alt="group-training" width="full" height="100">
+      <a href="./pages/group.html" class="card flex flex-col bg-whitesmoke w-3/4 shadow-lg rounded-lg ">
+        <img  class="rounded-t-lg mx-auto mt-4" src="./img/group3.jpg" alt="group-training" width="200" height="200">
       
         <div class="p-3">
-          <h5 class="font-bold text-xl mb-2">Group Training</h5>
-          <p>Join our group training for expert-led learning.
-            Collaborate, learn, and excel in the world of footwear</p>
+          <h5 class="mb-2 text-sm font-semibold">Group Training</h5>
+          <p class="text-xs md:text-sm">Collaborate, learn, and excel in the world of footwear</p>
           
       </div>
     </a>
@@ -198,41 +188,112 @@
     </div>
 
 
-
-   <!--Testimonial -->
-   <section class="mb-20 text-gray-700 px-4">
-    <div class="text-center max-w-3xl mx-auto">
-      <h3 class="testimonial__head text-3xl font-bold mb-6 text-gray-800">Testimonials</h3>
-      <!-- <p class="mb-6 pb-2 md:mb-12">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam
-        iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum
-        porro a pariatur veniam.
-      </p> -->
+    <!-- ===course CAROUSEL for mobile=== -->
+   <div class="course-container w-full mb-10 md:hidden">
+    <div class="w-full mx-auto">
+      <swiper-container slides-per-view="1.3" speed="500" loop="true" css-mode="true" pagination="true">
+        <swiper-slide lazy="true" class="mx-0 bg-grey" >
+          <a href="./pages/shoemaking.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto">
+            <img  class="rounded-t-lg" src="./img/shoe-12.jpeg" alt="shoe-making-course" width="200" height="200" loading="lazy">
+            
+              <div class="p-3">
+                <h5 class="mb-2 font-semibold">Shoemaking</h5>
+                <p class="text-xs">Master the art of shoemaking from design to finish
+                  </p>
+                
+            </div>
+      
+            </a>
+          
+        </swiper-slide>
+        <swiper-slide lazy="true">
+          <a  href="/pages/bag.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto" >
+            <img  class="rounded-t-lg" src="./img/bag-28.jpg" alt="bag-making-course" width="full" height="80" loading="lazy">
+            <div class="p-3">
+                <h5 class="mb-2 font-semibold">Bagmaking</h5>
+                <p class="text-xs">Explore the world of bag making with our expert guidance</p>
+                
+            </div>
+    
+          </a>
+        </swiper-slide>
+        <swiper-slide lazy="true">
+          <a href="./pages/group.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto">
+            <img  class="rounded-t-lg" src="./img/group3.jpg" alt="group-training" width="full" height="80" loading="lazy">
+          
+            <div class="p-3">
+              <h5 class=" mb-2 font-semibold">Group Training</h5>
+              <p class="text-xs">Collaborate, learn, and excel in the world of footwear</p>
+              
+          </div>
+        </a>
+        </swiper-slide>
+        
+      </swiper-container>
     </div>
+   </div>
+
+   <div class="divider w-3/4 mx-auto"><hr></div>
+    
+
+
+     <!-- ===Gallery=== -->
+   
+    <div class="gallery-container bg-whitesmoke">
+      <div class="gallery ">
+        <img src="/img/shoe-making-five.webp" alt="" class="slide-in from-left">
+        <img src="img/shoe-making-eleven.webp" alt=""  class="slide-in from-left">
+        <img src="/img/shoe-making-six.webp" alt=""  class="slide-in from-left">
+        <img src="/img/shoe-making-two.webp" alt=""  class="slide-in from-left">
+        <img src="/img/shoe-making-eight.png" alt=""  class="slide-in from-left">
+        <img src="img/shoe11.png" alt=""  class="slide-in from-left">
+        
+      </div>
+    
+    </div>
+
+   
+
+  <!-- ----button--- -->
+  <!-- <div class="text-center mb-10 mt-10"><button class="button" id="myBtn" ><a href="/pages/contactus.html" class="">Contact Us</a></button></div> -->
+  <div class="text-center mb-10 mt-10"><a href="/pages/contactus.html"><button id="myBtn" class="bn632-hover bn27 ">Contact us</button></a></div>
+
+
+  <!-- divider -->
+  <div class="divider w-3/4 mx-auto"><hr></div>
   
+   <!--Testimonial -->
+   
+    <!-- ----desktop testimonial--- -->
+   <section class="hidden  text-gray-700   p-4 bg-whitesmoke md:block">
+    <div class="   text-center max-w-3xl mx-auto">
+      <h3 class="testimonial__head text-3xl font-bold mb-6 text-gray-800">Testimonials</h3>
+      
+    </div>
+     
     <div class="grid md:grid-cols-3 gap-12 text-center mx-14">
-      <div class="mb-6 md:mb-0">
+      <div class="mb-6 p-4 md:mb-0 ">
         <div class="flex justify-center mb-6">
           <img
             src="/img/test4.jpg"
             class="rounded-full shadow-lg w-24"
           />
-        </div>
-        <p class="text-sm my-4 text-gray-500">
+        </div> 
+        <p class="text-sm my-4 text-justify text-gray-500">
           During my training at The Footwear Academy, I did not only gain knowledge, but I also
            found friendships that was timely in my life. The soft skills were the highlight of the programme,
            the way it was so relevant to our daily life experiences and all
         </p>
         <p class="italic">Anaekwe Tochukwu</p>
       </div>
-      <div class="mb-0">
+      <div class="mb-6">
         <div class="flex justify-center mb-6">
           <img
             src="img/test5.jpg"
             class="rounded-full shadow-lg w-24"
           />
         </div>
-        <p class="text-sm my-4 text-gray-500">
+        <p class="text-sm my-4 text-justify text-gray-500">
           All through the training, I enjoyed every bit and every section, from the Leatherworks to the soft 
           skills classes, I got to   understand that shoemaking can indeed be fun and it is not gender based. 
           Thank you TFA.
@@ -247,7 +308,7 @@
             class="rounded-full shadow-lg w-24"
           />
         </div>
-        <p class="text-sm my-4 text-gray-500">
+        <p class="text-sm my-4 text-justify text-gray-500">
           My works has always been appreciated and liked and it is as a result of the The Footwear Academy's shoemaking technique that I gained. I apply them daily at my workplace and always get wonderful results. 
           
         </p>
@@ -256,137 +317,99 @@
     </div>
   </section>
 
-  <div class="text-center mb-10"><button class="button" id="myBtn">Contact Us</button></div>
+  
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+  <!-- ----Mobile Testimonials---- -->
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <form action="https://formspree.io/f/xnqyzkvo" method="POST">
-      <div class="form-group mb-6">
-        <input type="text" class="form-control block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-          placeholder="Name"
-          name="Name">
+  <div class=" mt-20 mobile-testimonial w-full md:hidden">
+    <div class="w-3/4 mx-auto">
+      <swiper-container  slides-per-view="1.3" speed="500" loop="true" css-mode="true" scrollbar="true">
+        <swiper-slide >
+           <div class=" mb-2 flex flex-col w-full justify-center mx-auto">
+        <div class="flex justify-center mb-6">
+          <img
+            src="/img/test4.jpg"
+            class="testimonial__image"  
+          />
+        </div>
+        <p class="text-sm text-justify my-4 text-gray-500">
+          During my training at The Footwear Academy, I did not only gain knowledge, but I also
+           found friendships that was timely in my life. The soft skills were the highlight of the programme,
+           the way it was so relevant to our daily life experiences and all
+        </p>
+        <p class="italic">Anaekwe Tochukwu</p>
       </div>
-      <div class="form-group mb-6">
-        <input type="email" class="form-control block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
-          placeholder="Email address"
-          name="Email Address">
-      </div>
-      <div class="form-group mb-6">
-        <input type="tel" class="form-control block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
-          placeholder="Phone number"
-          name="phone number">
-      </div>
-      <div class="form-group mb-6">
-        <textarea class="
-        form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      " id="exampleFormControlTextarea13" rows="3" placeholder="Message" name="message"></textarea>
-      </div>
+        </swiper-slide>
+        <swiper-slide >
+          <div class="mb-0 flex flex-col w-3/4 justify-center mx-auto">
+            <div class="flex justify-center mb-6  ">
+              <img
+                src="img/test5.jpg"
+                class="testimonial__image"
+              />
+            </div>
+            <p class="text-sm  text-justify my-4 text-gray-500">
+              All through the training, I enjoyed every bit and every section, from the Leatherworks to the soft 
+              skills classes, I got to   understand that shoemaking can indeed be fun and it is not gender based. 
+              Thank you TFA.
+            </p>
+            <p class="italic p-2">Palmer Glory-Anna
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="mb-0 flex flex-col w-3/4 justify-center mx-auto">
+            <div class="flex justify-center mb-6">
+              <img
+                src="img/test6.jpg"
+                class="testimonial__image"
+              />
+            </div>
+            <p class="text-sm text-justify my-4 text-gray-500">
+              My works has always been appreciated and liked and it is as a result of the The Footwear Academy's shoemaking technique that I gained. I apply them daily at my workplace and always get wonderful results. 
+              
+            </p>
+            <p class="italic">Wakil Ismail Kareem</p>
+          </div>
+        </swiper-slide>
       
-      <button type="submit" class="          
-      w-1/2
-      px-6
-      py-2.5
-      bg-blue-600
-      text-white
-      font-medium
-      text-xs
-      
-      leading-tight
-      uppercase
-      rounded
-      shadow-md
-      hover:bg-blue-700 hover:shadow-lg
-      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-800 active:shadow-lg
-      transition
-      duration-150
-      ease-in-out 
-      align-center">Send</button>
-    
-    </form>
+      </swiper-container>
+    </div>
+
+
   </div>
 
+ <!-- divider -->
+ 
+
 </div>
+
+<!-- Visit blog -->
 
 <!-- whatsapp link -->
 
 <a href="https://wa.me/08182336533" id="whatsapp"><image src="./img/whatsapplogo.png"></image></button></a>
+ <!-- divider -->
+  
 
    <!-- award&recognition -->
-   <section class=" flex flex-col bg-whitesmoke p-10 justify-center gap-12 items-center  md:flex-row">
-    <div class="w-3/4 px-4 md:w-1/2">
+   <section class=" flex flex-col desk-par p-10 justify-center gap-12 items-center   md:flex-row">
+    <div class="w-full px-4 slide-in from-left md:w-1/2">
         <img src="img/awardone.jpg" alt="">
     </div>
-    <div class="flex flex-col justify-center items-center w-3/4 md:1/2">
-        <div class="text-3xl  font-medium mt-0 mb-10">
+    <div class="flex flex-col justify-center items-center w-full fade-in md:1/2">
+        <div class="text-xl  font-medium mt-0 mb-10">
           <h3>Awards and Recognitions</h3>
         </div>
         <div class="">
-          <ul class="gap-y-6 text-md mb-10">
-            <li><span class="font-bold">December 2021</span> - Best Leatherworks
-              Designer - Ace Awards</li>
-            <li><span class="font-bold">June 2021</span> - National MSME Award for
+          <ul class="gap-y-6 text-sm mb-10 md:text-base">
+            <li class="mb-2"><span class="font-bold">December 2021</span> - Best Leatherworks
+              Designer Male Category- Ace Awards</li>
+            <li class="mb-2"><span class="font-bold">June 2021</span> - National MSME Award for
               Excellence in Leatherworks</li>
-            <li><span class="font-bold">March 2020</span> - Grant winner, Friends of Prof.
+            <li class="mb-2"><span class="font-bold">March 2020</span> - Grant winner, Friends of Prof.
               Yemi Osibanjo Entrepreneurship competition.</li>
-            <li><span class="font-bold">December 2019</span> - Her Network StartUp
+            <li class="mb-2"><span class="font-bold">December 2019</span> - Her Network StartUp
               Woman of the Year Award</li>        
            </ul>
         </div>
@@ -479,9 +502,9 @@
       </div>
     </div>
   
-    <div class="text-center p-4"">
+    <div class="text-center p-4">
       © 2023 Copyright:
-      <a class="text-whitehite" href="https://tailwind-elements.com/">Footwear Academy</a>
+      <a class="text-whitehite" href="">Footwear Academy</a>
     </div>
   </footer>
 
@@ -494,6 +517,8 @@
 <script src="/node_modules/tw-elements//dist/js/index.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
 <script src="./main.js"></script>
 
 <!-- Google tag (gtag.js) -->

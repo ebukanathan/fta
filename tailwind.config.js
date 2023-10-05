@@ -20,7 +20,8 @@ module.exports = {
         darkGrey:'hsl(237,7%,49%)',
         darkRed:'hsl(349,79%,17%)',
         brown:'hsl(355,38%,37%)',
-        whitesmoke:'hsl(0,0%,96%)'
+        whitesmoke:'hsl(0,0%,96%)',
+        whitesmoketwo:'hsl(0,0%,97%)'
             
       },
   },

@@ -5,41 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <link href="./input.css" rel="stylesheet">
+    <link href="../input.css" rel="stylesheet">
     <title>Contact us</title>
 </head>
 <body>
-    
-    
- <!-- navbar -->
- <div class=" h-18 ">
-    <div class=" nav-bar flex flex-row justify-between  items-center mx-7  p-3 ">
-        <!-- logo -->
-        <div class="flex flex-row items-center">
-            <a href="../index.html"><img src="../img/logo.png" width="150" height="100" alt=""></a>
-            <div class="text-xl color-black"></div>
-                              
-        </div >
-        <!-- menu --> 
-        <div class="flex flex-row justify-between">
-           <div class="nav-item text-xl font-bold mx-3" ><a href="../index.html">Home</a></div>
-            <div class="nav-item text-xl font-bold mx-3" ><a href="./aboutus.html">About Us</a></div>
-            <div class="nav-item text-xl font-bold mx-3 dropdown">
-              <button class="dropbtn">The Academy</button>
-              <div class="dropdown-content">
-                <a href="./shoemaking.html">Shoe Making</a>
-                <a href="./bag.html">Bag Making</a>
-                <a href="#">Group Training</a>
-              </div>
-            </div> 
-            <div class="nav-item text-xl font-bold mx-5"><a href="">Gallery</a></div>
-        </div>
+   
+ <!-- header -->
+ <header class="nav__container" id="header">
+  <nav class="nav-bar flex flex-row justify-between  items-center mx-7  p-3 ">
+      
+      <div class="flex flex-row items-center">
+          <a href="/"><img src="/img/logo.png" width="150" height="100" alt=""></a>
+          <div class="text-xl color-black"></div>
 
-    </div>
-</div>
+      </div >
+      
+      <div class="nav__menu" id="nav-menu">
+         <div class="nav-item text-xl font-bold " ><a href="../index.html">Home</a></div>
+          <div class="nav-item text-xl font-bold " ><a href="aboutus.html">About Us</a></div>
+          <div class="nav-item text-xl font-bold dropdown courses">
+            <button class="dropbtn">Courses</button>
+            <div class="dropdown-content">
+              <a href="shoemaking.html">Shoe Making</a>
+              <a href="bag.html">Bag Making</a>
+              <a href="group.html">Group Training</a>
+            </div>
+          </div> 
+          <div class="nav-item text-xl font-bold  mobile-courses" ><a href="shoemaking.html">Shoe Making</a></div>
+        <div class="nav-item text-xl font-bold mobile-courses" ><a href="bag.html">Bag Making</a></div>
+        <div class="nav-item text-xl font-bold mobile-courses" ><a href="group.html">Group Training</a></div> 
+          <div class="nav-item text-xl font-bold "><a href="/pages/blog.html">Blog</a></div>
+          
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+      </div>
+
+  <div class="nav__toggle" id="nav-toggle">
+    <i class="ri-menu-fill"></i>
+  </div>
+ </nav>
+
+</header>
 
     <!-- The main form -->
-    <div class="flex flex-row justify-center h-screen">
+    <div class="flex flex-row justify-center md:w-2/3 mx-auto">
     <form action="https://formspree.io/f/xnqyzkvo" method="POST" class="flex flex-col w-3/4 h-12 rounded-lg my-10  p-10 border-2 md:w-1/2">
         
           <div class="form-group mb-6">
@@ -117,7 +127,7 @@
           </div>
           
           <button type="submit" class="          
-          w-1/2
+          w-full
           px-6
           py-2.5
           bg-blue-600
@@ -134,7 +144,7 @@
           transition
           duration-150
           ease-in-out 
-          align-center">Send</button>
+          align-center md:w-3/4 mx-auto">Send</button>
         
     </form>
     </div>
