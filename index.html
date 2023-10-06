@@ -11,6 +11,8 @@
 
     <link rel="icon" type="img/png" href="img/icon.png">
     <link href="/dist/output.css" rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+
     <link href="./input.css" rel="stylesheet">
 
     
@@ -111,11 +113,11 @@
         
         <!-- caption -->
         <div class="caption caption flex flex-col justify-center w-full mb-6 md:w-2/3">
-            <div class="caption-text  p-0text-justify w-full  md:px-14 ">
+            <div class="caption-text  p-0 text-justify w-full  md:px-14 ">
                
-              <h3 class="fade-in  text-justify text-lg md:text-lg">Welcome to <span class="">The Footwear Academy</span>, your gateway to the world of style and craftsmanship. 
-                As experts in both shoe and bag manufacturing, we seamlessly blend
-                 artistry with precision to create products that are as functional as they are fashionable. </h3>
+              <h3 class="fade-in  text-justify text-md md:text-lg">Welcome to <span class="">The Footwear Academy</span>, your gateway to the world of style and craftsmanship. 
+                <span class="hidden md:block">As experts in both shoe and bag manufacturing, we seamlessly blend
+                  artistry with precision to create products that are as functional as they are fashionable.</span> </h3> 
             
             </div>
         </div>
@@ -189,7 +191,55 @@
 
 
     <!-- ===course CAROUSEL for mobile=== -->
-   <div class="course-container w-full mb-10 md:hidden">
+
+    <!-- splide -->
+<div class=" w-5/6 mx-auto mb-4 md:hidden">
+  <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <a href="./pages/shoemaking.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto">
+            <img  class="rounded-t-lg" src="./img/shoe-12.jpeg" alt="shoe-making-course" width="200" height="200" loading="lazy">
+            
+              <div class="p-3">
+                <h5 class="mb-2 font-semibold">Shoemaking</h5>
+                <p class="text-xs">Master the art of shoemaking from design to finish
+                  </p>
+                
+            </div>
+      
+            </a>
+        </li>
+        <li class="splide__slide">
+          <a  href="/pages/bag.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto" >
+            <img  class="rounded-t-lg" src="./img/bag-28.jpg" alt="bag-making-course" width="full" height="80" loading="lazy">
+            <div class="p-3">
+                <h5 class="mb-2 font-semibold">Bagmaking</h5>
+                <p class="text-xs">Explore the world of bag making with our expert guidance</p>
+                
+            </div>
+    
+          </a>
+          
+        </li>
+        <li class="splide__slide">
+          <a href="./pages/group.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto">
+            <img  class="rounded-t-lg" src="./img/group3.jpg" alt="group-training" width="full" height="80" loading="lazy">
+          
+            <div class="p-3">
+              <h5 class=" mb-2 font-semibold">Group Training</h5>
+              <p class="text-xs">Collaborate, learn, and excel in the world of footwear</p>
+              
+          </div>
+        </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+
+   <!-- <div class="course-container w-full mb-10 md:hidden">
     <div class="w-full mx-auto">
       <swiper-container slides-per-view="1.3" speed="500" loop="true" css-mode="true" pagination="true">
         <swiper-slide lazy="true" class="mx-0 bg-grey" >
@@ -231,7 +281,7 @@
         
       </swiper-container>
     </div>
-   </div>
+   </div> -->
 
    <div class="divider w-3/4 mx-auto"><hr></div>
     
@@ -425,6 +475,119 @@
 
  
 
+ 
+
+<!-- splide -->
+<!-- <div class=" w-5/6 mx-auto md:hidden">
+  <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <a href="./pages/shoemaking.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto">
+            <img  class="rounded-t-lg" src="./img/shoe-12.jpeg" alt="shoe-making-course" width="200" height="200" loading="lazy">
+            
+              <div class="p-3">
+                <h5 class="mb-2 font-semibold">Shoemaking</h5>
+                <p class="text-xs">Master the art of shoemaking from design to finish
+                  </p>
+                
+            </div>
+      
+            </a>
+        </li>
+        <li class="splide__slide">
+          <a  href="/pages/bag.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto" >
+            <img  class="rounded-t-lg" src="./img/bag-28.jpg" alt="bag-making-course" width="full" height="80" loading="lazy">
+            <div class="p-3">
+                <h5 class="mb-2 font-semibold">Bagmaking</h5>
+                <p class="text-xs">Explore the world of bag making with our expert guidance</p>
+                
+            </div>
+    
+          </a>
+          
+        </li>
+        <li class="splide__slide">
+          <a href="./pages/group.html" class="card flex flex-col bg-lightGrey shadow-lg rounded-lg w-3/4 mx-auto">
+            <img  class="rounded-t-lg" src="./img/group3.jpg" alt="group-training" width="full" height="80" loading="lazy">
+          
+            <div class="p-3">
+              <h5 class=" mb-2 font-semibold">Group Training</h5>
+              <p class="text-xs">Collaborate, learn, and excel in the world of footwear</p>
+              
+          </div>
+        </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div> -->
+
+
+<!-- testimonial -->
+ <!-- <div class=" w-5/6 mx-auto md:hidden">
+  <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class=" mb-2 flex flex-col w-full justify-center mx-auto">
+            <div class="flex justify-center mb-6">
+              <img
+                src="/img/test4.jpg"
+                class="testimonial__image"  
+              />
+            </div>
+            <p class="text-sm text-justify my-4 text-gray-500">
+              During my training at The Footwear Academy, I did not only gain knowledge, but I also
+               found friendships that was timely in my life. The soft skills were the highlight of the programme,
+               the way it was so relevant to our daily life experiences and all
+            </p>
+            <p class="italic">Anaekwe Tochukwu</p>
+          </div>
+         
+        </li>
+        <li class="splide__slide">
+          <div class="mb-0 flex flex-col w-3/4 justify-center mx-auto">
+            <div class="flex justify-center mb-6  ">
+              <img
+                src="img/test5.jpg"
+                class="testimonial__image"
+              />
+            </div>
+            <p class="text-sm  text-justify my-4 text-gray-500">
+              All through the training, I enjoyed every bit and every section, from the Leatherworks to the soft 
+              skills classes, I got to   understand that shoemaking can indeed be fun and it is not gender based. 
+              Thank you TFA.
+            </p>
+            <p class="italic p-2">Palmer Glory-Anna
+            </p>
+          </div>
+         
+        </li>
+        <li class="splide__slide">
+          <div class="mb-0 flex flex-col w-3/4 justify-center mx-auto">
+            <div class="flex justify-center mb-6">
+              <img
+                src="img/test6.jpg"
+                class="testimonial__image"
+              />
+            </div>
+            <p class="text-sm text-justify my-4 text-gray-500">
+              My works has always been appreciated and liked and it is as a result of the The Footwear Academy's shoemaking technique that I gained. I apply them daily at my workplace and always get wonderful results. 
+              
+            </p>
+            <p class="italic">Wakil Ismail Kareem</p>
+          </div>
+          
+        </li>
+      </ul>
+    </div>
+  </section>
+</div> -->
+
+
+
+
    
    <!--footer -->
 
@@ -517,7 +680,12 @@
 <script src="/node_modules/tw-elements//dist/js/index.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script> 
+<script>
+  new Splide( '#image-carousel' ).mount();
+</script> 
 
 <script src="./main.js"></script>
 

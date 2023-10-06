@@ -22,6 +22,8 @@ const swiper = new Swiper('.swiper', {
     autoplay:{
         Delay:200000
     }
+
+    
   });
 
 
@@ -162,3 +164,14 @@ faders.forEach(fader=>{
 sliders.forEach(slider=>{
   appearOnScroll.observe(slider)
 })
+
+
+
+
+
+
+
+
+
+
+

@@ -787,3 +787,24 @@ swiper-slide img{
   letter-spacing: normal;
 
 }
+
+
+
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.my-carousel-progress {
+  background: #ccc;
+}
+
+.my-carousel-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
