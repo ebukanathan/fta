@@ -21,6 +21,11 @@
       font-size: 1rem;
     }
 
+
+    a{
+      -webkit-tap-highlight-color: transparent !important;
+    }
+
 .nav-item:hover{
     border-bottom: 2px solid #deb887;
 }
