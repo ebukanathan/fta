@@ -813,3 +813,8 @@ swiper-slide img{
   transition: width 400ms ease;
   width: 0;
 }
+
+
+.word{
+  word-spacing: -0.5px;
+}
