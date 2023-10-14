@@ -167,11 +167,3 @@ sliders.forEach(slider=>{
 
 
 
-
-
-
-
-
-
-
-
