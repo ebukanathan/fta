@@ -818,3 +818,18 @@ swiper-slide img{
 .word{
   word-spacing: -0.5px;
 }
+
+.courses-container{
+  width: 80%;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:30px;
+  margin:3px auto
+  
+}
+
+@media screen and (max-width:768px){
+ .courses-container{
+  display: none;
+ }
+}
