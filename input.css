@@ -389,8 +389,11 @@ swiper-slide img{
 
 .hero__content{
   position: relative;
-  animation: move 2s;
+  animation: moveinRight 2s ease-out;
 
+}
+.hero__content-tag{
+  animation: moveinLeft 2s ease-out;
 }
 
 @keyframes move{
@@ -459,8 +462,52 @@ swiper-slide img{
   bottom:3rem
 }
 
+/* animation */
+@keyframes moveinLeft{
+  0%{
+      opacity: 0;
+      transform:translateX(-30px)
+
+  }
+
+  80%{
+      transform: translateX(10px) rotate(360 deg);
+  }
+
+  
+
+  100%{
+      opacity:1;
+      transform:translate(0)
+
+
+  }
+}
+
+@keyframes moveinRight{
+  0%{
+      opacity: 0;
+      transform:translateX(100px)
+
+  }
+
+  80%{
+      transform: translateX(-10px);
+  }
+
+  
+
+  100%{
+      opacity:1;
+      transform:translate(0)
+
+
+  }
+}
+
 
 /* ======ABOUT PAGE======== */
+
 
 
 
