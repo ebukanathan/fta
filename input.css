@@ -4,12 +4,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*,
+/* *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-}
+} */
 body {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -46,6 +46,7 @@ a {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
+  grid-template-columns: repeat(1, 1fr);
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
@@ -60,7 +61,7 @@ a {
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 10px;
+  padding: 0 auto;
   text-decoration: none;
   opacity: 0.5;
   height: 100%;
@@ -78,11 +79,11 @@ a {
 /* Show the dropdown menu on hover */
 @media screen and (min-width: 768px) {
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: grid;
   }
 }
 @media screen and (min-width: 768px) {
-  .course {
+  .courses {
     display: block;
   }
   .mobile-courses {
@@ -329,6 +330,7 @@ swiper-slide img {
   position: relative;
   animation: moveinRight 2s ease-out;
 }
+
 .hero__content-tag {
   animation: moveinLeft 2s ease-out;
 }
@@ -346,11 +348,11 @@ swiper-slide img {
 
 /* .card {
   transition: transform 0.4s;
-} */
+}
 
 .card:hover {
-  transform: translateY(-1.5rem);
-}
+  transform: translateY(-1.5rem) 2s;
+} */
 
 .secondhero__container {
   background-color: whitesmoke;
@@ -594,7 +596,7 @@ swiper-slide img {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 0.8s ease-in;
 }
 
 .fade-in.appear {
@@ -603,7 +605,7 @@ swiper-slide img {
 
 .from-left {
   transform: translateX(-50%);
-  transition: transform 0.8s ease-in;
+  transition: transform 0.5s ease-in;
 }
 
 .from-left.appear {
@@ -751,5 +753,23 @@ swiper-slide img {
 @media screen and (max-width: 768px) {
   .courses-container {
     display: none;
+  }
+}
+
+.activity {
+  width: 67%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .activity {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
