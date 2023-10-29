@@ -488,7 +488,6 @@ swiper-slide img {
 
 /* ====SHOE==== */
 .shoe__hero {
-  background-image: url(img/shoe5.jpg);
   background-size: cover;
   background-position: bottom;
   object-fit: cover;
