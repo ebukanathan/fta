@@ -341,26 +341,6 @@ swiper-slide img {
   animation: moveinLeft 2s ease-out;
 }
 
-.home__hero {
-  background-image: url(img/newlanding.jpg);
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  object-position: top;
-  background-repeat: no-repeat;
-  /* min-height:50vh; */
-  width: 100%;
-  height: 80vh;
-}
-.home__hero-content {
-  padding-left: 3rem;
-  height: 100%;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #ffffff;
-  backdrop-filter: brightness(0.9);
-}
-
 @keyframes move {
   from {
     top: -3rem;
@@ -586,22 +566,6 @@ swiper-slide img {
   width: 100%;
 }
 
-/* Blog */
-
-/* .blog-container{
-  width: 100%;
-  min-height: 30vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-   padding:50px 8% ;
-   margin-inline: auto; 
-  overflow: hidden;
-  background-color: #a10404;
-}
- */
-
 .blog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -800,7 +764,7 @@ swiper-slide img {
 }
 
 .home__hero {
-  background-image: url(img/newlanding.jpg);
+  background-image: url(img/Footwearfrontpage.webp);
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -810,7 +774,27 @@ swiper-slide img {
   width: 100%;
   height: 80vh;
 }
-.home__hero-content {
+.home__hero-content .group__hero-content {
+  padding-left: 3rem;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  backdrop-filter: brightness(0.9);
+}
+
+.group__hero {
+  background-image: url(img/group-training-hero.webp);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: top;
+  background-repeat: no-repeat;
+  /* min-height:50vh; */
+  width: 100%;
+  height: 80vh;
+}
+.group__hero-content {
   padding-left: 3rem;
   height: 100%;
   width: 100vw;
